@@ -1,50 +1,47 @@
-/* Base Colors*/
-:root {
-    /* Light Mode Base */
-    --color-offwhite: #f8f9fa;
-    --color-light-gray: #e9ecef;
-    --color-mid-gray: #ced4da;
-    --color-dark-gray: #495057;
-    --color-near-black: #212529;
+/* ======================================
+    Colors
+=======================================*/
 
-    /* Dark Mode Base (inverse spectrum) */
-    --color-dark-bg: #0f172a;
-    --color-dark-surface: #1e293b;
-    --color-dark-border: #334155;
-    --color-light-text: #e2e8f0;
-    --color-muted-text: #94a3b8;
+/* Light Mode */
+:root {
+
+    /* ===== BACKGROUNDS ===== */
+    --bg-primary: #faf9f8;        /* offwhite */
+    --bg-secondary: #E2E9D8;      /* beige */
+    --surface: #ffffffbd;          
+
+    /* ===== TEXT ===== */
+    --text-primary: #1E1E24;      /* shadow gray */
+    --text-secondary: #81717A;    /* dusty mauve */
+    --text-muted: #b2b7bb;        /* mid gray */
+
+    /* ===== BORDERS ===== */
+    --border: #DDD1C7;
+
+    /* ===== ACCENTS ===== */
+    --accent-primary: #FF521B;    /* tiger flame */
+    --accent-secondary: #6F732F;  /* olive */
+
 }
 
-/* Color Mapping */
-:root {
-    /* Backgrounds */
-    --background: var(--color-offwhite);
-    --surface: var(--color-light-gray);
+/* Dark Mode */
+:root.dark {
 
-    /* Text */
-    --text-primary: var(--color-near-black);
-    --text-secondary: var(--color-dark-gray);
-    --text-muted: var(--color-mid-gray);
+    /* ===== BACKGROUNDS ===== */
+    --bg-primary: #121214;
+    --bg-secondary: #1A1A1F;
+    --surface: #1F1F25;
 
-    /* Borders */
-    --border: var(--color-mid-gray);
+    /* ===== TEXT ===== */
+    --text-primary: #F2F2F2;
+    --text-secondary: #C5C8CC;
+    --text-muted: #8A9096;
 
-    /* Accent */
-    --accent: #2563eb;
-    --accent-hover: #1d4ed8;
-}
+    /* ===== BORDERS ===== */
+    --border: #2A2A32;
 
-/* Dark Mode Override */
-[data-theme="dark"] {
-    --background: var(--color-dark-bg);
-    --surface: var(--color-dark-surface);
+    /* ===== ACCENTS ===== */
+    --accent-primary: #FF6A3D;   /* lifted tiger flame */
+    --accent-secondary: #9BA64C; /* lifted olive */
 
-    --text-primary: var(--color-light-text);
-    --text-secondary: var(--color-muted-text);
-    --text-muted: #64748b;
-
-    --border: var(--color-dark-border);
-
-    --accent: #3b82f6;
-    --accent-hover: #60a5fa;
 }
