@@ -40,7 +40,7 @@ ul {
     padding: 0 6%;
     width: 100%;
     /* Temporary height */
-    height: 1080px;
+    height: 100vh;
 }
 
 #hero, #skills,
@@ -159,9 +159,12 @@ nav ul li.active {
 
 .floating-shape {
     position: absolute;
-    background: var(--accent-secondary);
+    background: var(--accent-primary);
     opacity: 0.2;
-    
+}
+
+#circle, #square {
+    background: var(--accent-secondary);
 }
 
 #circle {
@@ -182,6 +185,26 @@ nav ul li.active {
     border-radius: 10px;
 
     animation: square-float 5s ease-in-out infinite alternate;
+}
+
+#circle2 {
+    right: 30%;
+    bottom: 70%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+    animation: circle-float 3s ease-in-out infinite alternate;
+}
+
+#square2 {
+    left: 30%;
+    top: 70%;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+
+    animation: square-float 4s ease-in-out infinite alternate;
 }
 
 @keyframes circle-float {
@@ -205,6 +228,7 @@ nav ul li.active {
 /* ============================================
     4. About Section
 =============================================*/
+
 
 
 
