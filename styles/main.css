@@ -6,6 +6,11 @@
     1. Base Global Styling
 =============================================*/
 
+* {
+    /* temporary debug */
+    outline: blue 1px solid;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -17,6 +22,11 @@ body {
 
 h2, p {
     color: var(--text-primary);
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 3rem;
 }
 
 main {
@@ -37,13 +47,10 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 6%;
     width: 100%;
-    /* Temporary height */
-    height: 1080px;
 }
 
-#hero, #skills,
+#hero,
 #projects {
     background-color: var(--bg-secondary);
 }
@@ -112,6 +119,7 @@ nav ul li.active {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
 #hero-content {
@@ -159,9 +167,12 @@ nav ul li.active {
 
 .floating-shape {
     position: absolute;
-    background: var(--accent-secondary);
+    background: var(--accent-primary);
     opacity: 0.2;
-    
+}
+
+#circle, #square {
+    background: var(--accent-secondary);
 }
 
 #circle {
@@ -182,6 +193,26 @@ nav ul li.active {
     border-radius: 10px;
 
     animation: square-float 5s ease-in-out infinite alternate;
+}
+
+#circle2 {
+    right: 30%;
+    bottom: 70%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+    animation: circle-float 3s ease-in-out infinite alternate;
+}
+
+#square2 {
+    left: 30%;
+    top: 70%;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+
+    animation: square-float 4s ease-in-out infinite alternate;
 }
 
 @keyframes circle-float {
@@ -205,6 +236,69 @@ nav ul li.active {
 /* ============================================
     4. About Section
 =============================================*/
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 60px;
+}
+
+#about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 40px 0;
+}
+
+#about h2 {
+    position: relative;
+    display: inline-block;
+    margin: 40px 0;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+#about h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 100px;
+    transform: translateX(-50%);
+    bottom: -10px;
+    height: 4px;
+    background-color: var(--accent-primary);
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+#about p {
+    max-width: 35vw;
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+#about em {
+    color: var(--text-muted);
+}
+
+#about-shape {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+#about-shape p {
+    color: white;
+    text-align: center;
+    line-height: 300px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
 
 
