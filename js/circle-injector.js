@@ -1,4 +1,4 @@
-fetch('../assets/images/svgs/meditation-circle.svg')
+fetch('./assets/images/svgs/meditation-circle.svg')
   .then(r => r.text())
   .then(svg => {
     document.getElementById('meditation-circle').innerHTML = svg;
@@ -6,7 +6,7 @@ fetch('../assets/images/svgs/meditation-circle.svg')
   })
   .catch(err => console.error(err));
 
-fetch('../assets/images/svgs/moonsign-circle.svg')
+fetch('./assets/images/svgs/moonsign-circle.svg')
   .then(r => r.text())
   .then(svg => {
     document.getElementById('moonsign-circle').innerHTML = svg;
