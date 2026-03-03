@@ -326,6 +326,7 @@ nav ul li.active {
     transition: background-color var(--ease-base), transform var(--ease-fast), box-shadow var(--ease-base);
     box-shadow: 0 4px 20px var(--accent-primary-glow);
     letter-spacing: 0.01em;
+    z-index: 1;
 }
 
 #projects-btn:hover {
@@ -953,10 +954,21 @@ nav ul li.active {
 }
 
 /* ============================================
-    Responsive — About Section
+    Responsive Design
 =============================================*/
 
 @media (max-width: 1024px) {
+    /* Increase Hero svg size on mobile to maintain visual impact as screen narrows */
+    #meditation-circle,
+    #moonsign-circle {
+        width: 55vw;
+    }
+
+    #meditation-circle svg, 
+    #moonsign-circle svg {
+        width: 80vw;
+    }
+    /* About section — switch to 2-column layout, stack status + stack cards */
     #about-bento {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
