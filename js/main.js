@@ -4,29 +4,33 @@
 
 const projects = {
     project1: {
-        title: "Console Contact Book",
-        description: "A simple contact book application built using JavaScript. Allows users to add, edit, view, and delete contacts, with data persisted via JSON to local storage.",
-        github: "https://github.com/AdendorffL/Mini-Project-Console-Contact-Book",
-        image: "./assets/images/projects/console-contact-book.png",
-        stack: ["JavaScript", "JSON"],
+        title: "Saamry",
+        description: "An easy to use carpooling app for keeping track of rides and ticket purchases, to ensure that all riders get equal share.",
+        github: "https://github.com/AdendorffL/Saamry",
+        image: "./assets/images/projects/saamry.png",
+        stack: ["JavaScript", "HTML", "CSS", "PostgreSQL"],
         live: null
     },
+
     project2: {
-        title: "SmartGear",
-        description: "An online sports gear store with live stock updates, search, user auth, role-based access control, and persistent data via SQL Server.",
-        github: "https://github.com/AdendorffL/College-Project-SmartGear",
-        image: "./assets/images/projects/smartgear.png",
-        stack: ["C#", "ASP.NET", "SQL Server", "HTML", "CSS", "JavaScript", "Bootstrap"],
-        live: null
-    },
-    project3: {
         title: "Personal Portfolio",
         description: "The portfolio you're looking at — built from scratch with vanilla HTML, CSS, and JavaScript.",
         github: "https://github.com/AdendorffL/New-Portfolio",
         image: "./assets/images/projects/portfolio.png",
         stack: ["HTML", "CSS", "JavaScript"],
         live: "https://adendorffl.github.io/Personal-Portfolio/"
+    },
+
+    project3: {
+        title: "Console Contact Book",
+        description: "A simple contact book application built using JavaScript. Allows users to add, edit, view, and delete contacts, with data persisted via JSON to local storage.",
+        github: "https://github.com/AdendorffL/Mini-Project-Console-Contact-Book",
+        image: "./assets/images/projects/console-contact-book.png",
+        stack: ["JavaScript", "JSON"],
+        live: null
     }
+    
+    
 };
 
 // ==============
